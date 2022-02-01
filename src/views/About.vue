@@ -1,7 +1,7 @@
 <template>
-  <h1>Abouttt</h1>
+  <h1>About</h1>
   <h2>{{count}}</h2>
-  <button >add_temp</button>
+  <button @click='increment()' >add_temp</button>
 </template>
 
 <script>
@@ -14,9 +14,8 @@ export default {
     return store.state.count}
   },
   methods: {
-    increment(){
-      
-    }
-  }
+    increment () {
+      return store.commit('increment')
+    }}
 }
 </script>
