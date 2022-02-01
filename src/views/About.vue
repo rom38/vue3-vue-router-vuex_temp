@@ -1,6 +1,7 @@
 <template>
-  <h1>Aboutt</h1>
+  <h1>Abouttt</h1>
   <h2>{{count}}</h2>
+  <button >add_temp</button>
 </template>
 
 <script>
@@ -11,6 +12,11 @@ export default {
   computed: {
     count(){
     return store.state.count}
+  },
+  methods: {
+    increment(){
+      
+    }
   }
 }
 </script>
