@@ -3,8 +3,9 @@
   <h2>{{count}}</h2>
   <button class="btn btn-primary" @click='increment()' >add_temp</button>
   <p></p>
-  <input></input><button class="btn">add patient</button>
-
+  <div class="input-group mb-3">
+  <input type="text" class="form-control"></input><button class="btn btn-outline-secondary">add patient</button>
+  </div>
   <ul class="list-group list-group-numbered" >
   <li class="list-group-item" v-for='pat in patients'>{{pat}}</li>
   </ul>
