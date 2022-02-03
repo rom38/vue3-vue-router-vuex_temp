@@ -4,7 +4,8 @@
   <button class="btn btn-primary" @click='increment()' >add_temp</button>
   <p></p>
   <div class="input-group mb-3">
-  <input type="text" class="form-control"></input><button class="btn btn-outline-secondary">add patient</button>
+  <input type="text" class="form-control">
+  <button class="btn btn-outline-secondary" @click='add_pat()'>add patient</button>
   </div>
   <ul class="list-group list-group-numbered" >
   <li class="list-group-item" v-for='pat in patients'>{{pat}}</li>
@@ -25,6 +26,10 @@ export default {
   methods: {
     increment () {
       return store.commit('increment')
-    }}
+    },
+    add_pat () {
+      return store.commit('add_pat')
+    }
+}
 }
 </script>

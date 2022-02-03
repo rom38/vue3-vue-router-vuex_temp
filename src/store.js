@@ -14,6 +14,10 @@ export const store = createStore({
     increment (state) {
       // mutate state
       state.count++
+    },
+    add_pat (state) {
+      // mutate state
+      state.patients.push("gfhjgfhvh")
     }
   }
 })
