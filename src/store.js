@@ -15,9 +15,10 @@ const store = createStore({
       // mutate state
       state.count++
     },
-    add_pat (state) {
+    add_pat (state,patient) {
       // mutate state
-      state.patients.push("gfhjgfhvh")
+      //state.patients.push("gfhjgfhvh")
+      state.patients.push(patient)
     }
   }
 })
