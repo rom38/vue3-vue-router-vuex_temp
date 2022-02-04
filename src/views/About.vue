@@ -13,24 +13,24 @@
 </template>
 
 <script>
-import { store } from '../store'
+//import { store } from '../store'
 //import { Store } from 'vuex'
 export default {
   name: 'HelloWorld',
   computed: {
     count() {
-      return store.state.count
+      return this.$store.state.count
     },
     patients() {
-      return store.state.patients
+      return this.$store.state.patients
     },
   },
   methods: {
     increment() {
-      return store.commit('increment')
+      return this.$store.commit('increment')
     },
     add_pat() {
-      return store.commit('add_pat')
+      return this.$store.commit('add_pat')
     },
   },
 }
